@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Mission 0: Découverte
 
 ## Requête GET simple 
@@ -43,9 +42,9 @@ Comment formater le corps de la requête ?
 ## Mission 1: Le jeu de piste du protocole HTTP
 
 
-### Étape 1 : Envoi d'une requête GET simple
+### Étape 1 :
 
-**Explication : **
+**Explication : requête HTTP GET vers la ressource d'accueil**
 
 URL de départ : http://172.16.3.254:8001/bienvenue
 
@@ -62,9 +61,9 @@ Réponse :
     "tips": "https://developer.mozilla.org/fr/docs/Web/HTTP/Reference/Methods/GET"
     }
 
-### Étape 2 : Transmission d'un paramètre de requête unique
+### Étape 2 :
 
-**Explication : **
+**Explication : Utilisation d'un paramètre unique dans l'URL (?nom=test).**
 
 http://172.16.3.254:8001/decouverte-des-parametres?nom=test
 
@@ -81,9 +80,9 @@ Réponse :
     "next_step": "Pour passer à l'étape suivante, vous devez faire une requête GET à l'URL \"/plusieurs-parametres\" avec un paramètre \"prenom\" dans l'URL et un paramètre \"age\".Cela vous permettra de comprendre comment les paramètres dans l'URL fonctionnent pour personnaliser vos requêtes HTTP. N'oubliez pas que les paramètres dans l'URL sont souvent utilisés pour filtrer ou personnaliser les données que vous récupérez du serveur. En utilisant ces paramètres, vous pourrez mieux comprendre comment interagir avec les API RESTful et les serveurs web. Pour plus d'informations sur les paramètres dans l'URL, vous pouvez consulter la documentation officielle de MDN : https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"
     }
 
-### Étape 3 : Multiplexage de paramètres dans la Query String
+### Étape 3 : 
 
-**Explication :**
+**Explication : Utilisation de plusieurs paramètres dans l'URL (prenom et age) en les séparant par un symbole "&" (?prenom=test&age=10).**
 
 http://172.16.3.254:8001/plusieurs-parametres?prenom=test&age=10
 
@@ -102,7 +101,7 @@ Réponse :
 
 ### Étape 4 :
 
-**Explication :**
+**Explication : Exécution d'une requête avec la méthode POST au lieu de GET pour envoyer des données au serveur.**
 
 http://172.16.3.254:8001/un-peu-de-post
 
@@ -121,7 +120,7 @@ Réponse :
 
 ### Étape 5 :
 
-**Explication :**
+**Explication : Ajout d'un en-tête ```Content-Type: application/json``` à la requête POST pour préciser le format du body envoyé.**
 
 http://172.16.3.254:8001/5-content-type
 
@@ -141,7 +140,7 @@ Réponse :
 
 ### Étape 6 :
 
-**Explication :**
+**Explication : Utilisation de la méthode PUT pour envoyer deux en-têtes simultanément (```Content-Type``` pour le format envoyé et ```Accept``` pour le format attendu).**
 
 http://172.16.3.254:8001/put-method-6
 
@@ -162,7 +161,7 @@ Réponse :
 
 ### Étape 7 :
 
-**Explication :**
+**Explication : Utilisation de la méthode DELETE. Exemple avec un paramètre d'URL (?filename=test).**
 
 http://172.16.3.254:8001/et-oui-delete?filename=test
 
@@ -181,7 +180,7 @@ Réponse :
 
 ### Étape 8 :
 
-**Explication :**
+**Explication : Utilisation de la méthode PATCH avec un ```Content-Type``` JSON dans le body pour modifier une ressource.**
 
 http://172.16.3.254:8001/etape8/api/users/12345
 
@@ -207,7 +206,7 @@ Réponse :
 
 ### Étape 9 :
 
-**Explication :**
+**Explication : Requête POST combinant un body JSON, une clé d'API personnalisée et un en-tête User-Agent.**
 
 http://172.16.3.254:8001/etape9
 
@@ -230,44 +229,3 @@ Réponse :
     "cours": "La méthode POST est utilisée pour soumettre des données au serveur. L'en-tête \"Content-Type\" est souvent utilisé pour spécifier le format des données envoyées.",
     "success": "✅✅✅ Vous avez utilisé la bonne méthode et le bon type de contenu. Vous avez terminé le jeu de piste! ✅✅✅"
     }
-=======
-# Mission 0: Découverte
-
-## Requête GET simple 
-
-**Bruno :**
-![alt text](<img/GET Bruno.png>)
-
-**postman :**
-
-![alt text](<img/GET postman.png>)
-
-Comment est affichée la réponse ?
-
-    La réponse est affichée au format JSON
-
-Comment sauvegarder la requête ?
-
-    Il faut cliquer sur le bouton de sauvegarde. Dans bruno, les requêtes sont directement enregistrées sous forme de fichiers texte.
-
-Comment organiser les requêtes (dossiers/collections) ?
-
-
-## Requête POST avec données 
-
-**Bruno :**
-![alt text](<img/POST Bruno.png>)
-
-**Postman**
-![alt text](<img/POST postman.png>)
-
-Comment ajouter des headers ?
-
-    Sous la barre d'adresse de la requête, cliquez sur l'onglet Headers.
-
-Comment formater le corps de la requête ?
-
-    - Onglet Body situé sous l'URL de la requête.
-    - Sélectionner le format souhaité
-    - Saisir directement dans l'éditeur
->>>>>>> 228179e82ac90764f52a6f21463279b1a1e4ef0d
